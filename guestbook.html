@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link href="navbar.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .message {
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #04AA6D;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="/">首頁</a>
+    <a href="/guestbook.html" class="active">留言板</a>
+    <a href="/snake.html">🐍 Snake</a>
+    <a href="/draw.html">✏️ Draw</a>
+</div>
+
+<div class="container">
+    <h1>📝 留言板</h1>
+    
+    <div class="note">
+        <strong>ℹ️ 說明：</strong><br>
+        這是留言板的靜態展示頁面。<br>
+        原始專案需要連線到學校 MySQL 資料庫才能新增/讀取留言。<br>
+        <br>
+        <strong>成果說明：</strong><br>
+        • 使用 Node.js + Express 框架<br>
+        • 使用 MySQL 資料庫儲存留言<br>
+        • 支援新增留言、讀取留言功能<br>
+        • 使用 SQL 佔位符防止注入攻擊
+    </div>
+
+    <h2>📖 留言範例</h2>
+    <div class="message">
+        <strong>張老師</strong> <span style="color:gray; font-size:12px;">2024-01-15 10:30</span>
+        <p>這是一個留言範例，實際運作時會從資料庫讀取！</p>
+    </div>
+    <div class="message">
+        <strong>李同學</strong> <span style="color:gray; font-size:12px;">2024-01-14 15:20</span>
+        <p>Node.js 留言板專案，學習到很多！</p>
+    </div>
+</div>
+
+</body>
+</html>
