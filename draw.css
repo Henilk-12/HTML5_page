@@ -1,0 +1,71 @@
+/* 設定整體背景與字體 */
+body {
+  background-color: #f8f9fa;
+  font-family: "Microsoft JhengHei", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Canvas 畫布區塊 */
+#canvas {
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  cursor: crosshair;
+}
+
+/* 控制面板 */
+div {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 15px 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 顏色與粗細輸入框 */
+input[type="color"],
+input[type="range"] {
+  margin: 5px 10px;
+}
+
+/* 數值顯示 */
+output {
+  font-weight: bold;
+  color: #4b0082; /* 靛藍色呼應你的星星顏色 */
+}
+
+/* 按鈕樣式 */
+button {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin: 10px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #5c1ca3;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #380d66;
+}
+
+/* 輸出圖片的顯示區 */
+#show {
+  margin-top: 20px;
+  max-width: 600px;
+  border: 2px dashed #999;
+  border-radius: 10px;
+  display: none; /* 預設不顯示，產生後再用 JS 顯示 */
+}
