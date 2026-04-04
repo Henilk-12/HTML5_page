@@ -6,9 +6,6 @@
 - ✏️ 繪圖板
 - 📝 留言板（需搭配 Node.js + MySQL）
 
-## 成果展示
-📹 **實際運作影片**：請參考 `demo.mp4`
-
 ## 技術棧
 - HTML5 / CSS3 / JavaScript
 - Canvas API
